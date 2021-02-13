@@ -1,0 +1,19 @@
+version: "3.0"
+services:
+  adminer:
+    depends_on: 
+      - "db"
+    image: "adminer"
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080"
+
+  db:
+    environment:
+      - "POSTGRES_DB=calc"
+      - "POSTGRES_USER=calc"
+      - "POSTGRES_PASSWORD=calc"
+    image: "postgres:13"
+    ports:
+      - "5432:5432"
+    restart: "unless-stopped"

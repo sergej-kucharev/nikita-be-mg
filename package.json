@@ -1,0 +1,35 @@
+{
+  "name": "mortrage-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon app.js",
+    "db:migrate:generate": "npx sequelize migration:generate --name xxx",
+    "db:migrate:run": "npx sequelize db:migrate",
+    "db:migrate:status": "npx sequelize db:migrate:status",
+    "db:migrate:undo": "npx sequelize db:migrate:undo --name file.js",
+    "db:migrate:undo:all": "npx sequelize db:migrate:undo:all",
+    "db:model:generate": "npx sequelize model:generate --name xxx --attributes xxx:string",
+    "db:seed:run": "npx sequelize db:seed --seed file-1.js file-2.js",
+    "db:seed:undo": "npx sequelize db:seed:undo --seed file-1.js file-2.js",
+    "db:seed:run:all": "npx sequelize db:seed:all",
+    "db:seed:undo:all": "npx sequelize db:seed:undo:all",
+    "db:seed:generate": "npx sequelize seed:generate --name xxx"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.15",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0"
+  }
+}
