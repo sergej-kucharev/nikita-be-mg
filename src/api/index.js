@@ -1,8 +1,8 @@
 const { Router, } = require('express');
 
-const router = new Router({});
+const route = new Router({});
 
-// router.use('/api/v1/', require('./ManagerPage'));
-// router.use('/api/v1/', require('./calculator'));
+route.use('/api/v1/bank', require('./route-bank'));
+route.use('/api/v1/', require('./route-calc'));
 
-module.exports = router;
+module.exports = route;

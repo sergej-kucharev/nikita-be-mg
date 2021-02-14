@@ -1,17 +1,17 @@
 const { Router, } = require('express');
-const path = require('path');
+const { resolve, } = require('path');
 
-const router = new Router({});
+const route = new Router({});
 
-router.get([
+route.get([
     '/',
     '/bank',
     '/calc',
 ], async (req, res) => {
     res.sendFile('index.html', {
         maxAge: '1d',
-        root: path.resolve(__dirname, '../../asset'),
+        root: resolve(__dirname, '../../asset'),
     });
 });
 
-module.exports = router;
+module.exports = route;
