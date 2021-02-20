@@ -4,21 +4,23 @@
     "password": "calc",
     "database": "calc",
     "host": "localhost",
-    "port": 5432,
+    "port": 9432,
     "dialect": "postgres"
   },
   "test": {
     "username": "calc",
     "password": "calc",
     "database": "calc",
-    "host": "localhost:5432",
+    "host": "localhost",
+    "port": 5432,
     "dialect": "postgres"
   },
   "production": {
     "username": "calc",
     "password": "calc",
     "database": "calc",
-    "host": "localhost:5432",
+    "host": "localhost",
+    "port": 5432,
     "dialect": "postgres"
   }
 }
