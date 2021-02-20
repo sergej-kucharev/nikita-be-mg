@@ -14,8 +14,8 @@ const { env, } = process;
 const { NODE_ENV, APP_PORT, } = env;
 
 app.use(cors((req, done) => {
-    // done(null, { origin: true }); // - reflect
-    done(null, { origin: false }); // - allow
+    done(null, { origin: true }); // - reflect
+    // done(null, { origin: false }); // - allow
 }));
 
 app.use((req, res, next) => {
