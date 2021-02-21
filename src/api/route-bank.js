@@ -22,8 +22,8 @@ route.post(
   bodyLoanTerm,
   validator,
   asyncHandler(async (req, res) => {
-    const item = await bank.create(req.body);
-    res.json({ item });
+    const created = await bank.create(req.body);
+    res.json({ created });
   })
 );
 
@@ -73,8 +73,8 @@ route.patch(
   validator,
   asyncHandler(async(req, res) => {
     const { bankId, } = req.params;
-    const result = await bank.update({ ...req.body, }, { where: { id: bankId, }, });
-    res.json({ result });
+    const updated = await bank.update({ ...req.body, }, { where: { id: bankId, }, });
+    res.json({ updated });
   })
 );
 
@@ -84,8 +84,8 @@ route.delete(
   validator,
   asyncHandler(async(req, res) => {
     const { bankId, } = req.params;
-    const result = await bank.destroy({ where: { id: bankId, }, });
-    res.json({ result });
+    const removed = await bank.destroy({ where: { id: bankId, }, });
+    res.json({ removed });
   })
 );
 
