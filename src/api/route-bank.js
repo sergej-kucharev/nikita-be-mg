@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const asyncHandler = require('express-async-handler');
 const { body, oneOf, param, validator, } = require('../helpers/validator');
-const { bank, } = require('../../models');
+const { bank, } = require('../../db/models');
 
 const route = new Router();
 const isPercent = (value) => Number.isFinite(value) && value>=0 && value<=100;
