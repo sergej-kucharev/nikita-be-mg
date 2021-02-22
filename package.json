@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "start": "node app.js",
-    "start:dev": "npx nodemon app.js",
+    "start": "node src/app.js",
+    "start:dev": "npx nodemon src/app.js",
     "test": "npx jest",
     "test:watch": "npx jest -w"
   },

@@ -23,7 +23,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(express.static('asset', {
+app.use(express.static('fe/build', {
     dotfiles: 'ignore',
     etag: true,
     extensions: false,

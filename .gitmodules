@@ -1,0 +1,3 @@
+[submodule "fe"]
+	path = fe
+	url = git@github.com:sergej-kucharev/nikita-fe-mg.git

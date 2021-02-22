@@ -10,7 +10,7 @@ route.get([
 ], async (req, res) => {
     res.sendFile('index.html', {
         maxAge: '1d',
-        root: resolve(__dirname, '../../asset'),
+        root: resolve(__dirname, '../../fe/build'),
     });
 });
 
